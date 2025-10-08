@@ -81,19 +81,7 @@ def main(config):
         device=config['device']
     )
 
-
-    # # Create UCB
-    # agent = fba.UCB(
-    #     config['n_agents'],
-    #     config['n_arms'],
-    #     graph,
-    #     config['p'],
-    #     config['horizon'],
-    #     device=config['device']
-    # )
-
-
-
+    # Create new algorithm here
     regret = []
     cumu_loss = 0
     rounds = len(train_loader)
