@@ -46,7 +46,7 @@ class GSE:
 
         log_T = torch.log(torch.tensor(self.T))
 
-        # complete graph
+        # different graph structures
         if self.network == "COMPLETE":
             L = self.K * log_T/self.p 
             tau_star = log_T/(self.p)
